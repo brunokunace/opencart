@@ -608,14 +608,7 @@ INSERT INTO `oc_cron` (`cron_id`, `code`, `cycle`, `action`, `status`, `date_add
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(1, 'Pound Sterling', 'GBP', '£', '', '2', 0.61250001, 1, '2014-09-25 14:40:00'),
-(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2014-09-25 14:40:00'),
-(3, 'Euro', 'EUR', '', '€', '2', 0.78460002, 1, '2014-09-25 14:40:00'),
-(4, 'Hong Kong Dollar', 'HKD', 'HK$', '', '2', 7.82224000, 0, '2018-02-16 12:00:00'),
-(5, 'Indian Rupee', 'INR', '₹', '', '2', 64.40000000, 0, '2018-02-16 12:00:00'),
-(6, 'Russian Ruble', 'RUB', '₽', '', '2', 56.40360000, 0, '2018-02-16 12:00:00'),
-(7, 'Chinese Yuan Renminbi', 'CNY', '¥', '', '2', 6.34510000, 0, '2018-02-16 12:00:00'),
-(8, 'Australian Dollar', 'AUD', '$', '', '2', 1.26544000, 0, '2018-02-16 12:00:00');
+(1, 'Real', 'BRL', 'R$', '', '2', 1.00000, 1, '2018-09-28 12:00:00');
 
 -----------------------------------------------------------
 
@@ -903,7 +896,7 @@ INSERT INTO `oc_information_to_store` (`information_id`, `store_id`) VALUES
 --
 
 INSERT INTO `oc_language` (`language_id`, `name`, `code`, `locale`, `image`, `sort_order`, `status`) VALUES
-(1, 'English', 'en-gb', 'en-gb,en', 'gb.png', 1, 1);
+(1, 'Português', 'pt-br', 'pt-BR,pt_BR.UTF-8,pt_BR,pt-br,portuguese', 'pt-br.png', 1, 1);
 
 -----------------------------------------------------------
 
@@ -1518,17 +1511,17 @@ INSERT INTO `oc_setting` (`store_id`, `code`, `key`, `value`, `serialized`) VALU
 (0, 'config', 'config_ftp_username', '', 0),
 (0, 'config', 'config_ftp_port', '21', 0),
 (0, 'config', 'config_ftp_hostname', '', 0),
-(0, 'config', 'config_meta_title', 'Your Store', 0),
-(0, 'config', 'config_meta_description', 'My Store', 0),
+(0, 'config', 'config_meta_title', 'Sua Loja', 0),
+(0, 'config', 'config_meta_description', 'Minha Loja', 0),
 (0, 'config', 'config_meta_keyword', '', 0),
 (0, 'config', 'config_theme', 'default', 0),
 (0, 'config', 'config_layout_id', '4', 0),
-(0, 'config', 'config_country_id', '222', 0),
-(0, 'config', 'config_zone_id', '3563', 0),
-(0, 'config', 'config_timezone', 'UTC', 0),
-(0, 'config', 'config_language', 'en-gb', 0),
-(0, 'config', 'config_admin_language', 'en-gb', 0),
-(0, 'config', 'config_currency', 'USD', 0),
+(0, 'config', 'config_country_id', '30', 0),
+(0, 'config', 'config_zone_id', '452', 0),
+(0, 'config', 'config_timezone', 'America/Sao_Paulo', 0),
+(0, 'config', 'config_language', 'pt-br', 0),
+(0, 'config', 'config_admin_language', 'pt-br', 0),
+(0, 'config', 'config_currency', 'BRL', 0),
 (0, 'config', 'config_currency_auto', '1', 0),
 (0, 'config', 'config_currency_engine', 'fixer', 0),
 (0, 'config', 'config_length_class_id', '1', 0),
@@ -1860,7 +1853,7 @@ INSERT INTO `oc_seo_url` (`store_id`, `language_id`, `query`, `keyword`, `push`)
 (0, 1, 'information_id=6', 'delivery', 'route=information/information&information_id=6'),
 (0, 1, 'information_id=3', 'privacy', 'route=information/information&information_id=3'),
 (0, 1, 'information_id=5', 'terms', 'route=information/information&information_id=5'),
-(0, 1, 'language=en-gb', 'en-gb', 'language=en-gb'),
+(0, 1, 'language=pt-br', 'pt-br', 'language=pt-br'),
 (0, 1, 'route=information/information', '', ''),
 (0, 1, 'route=product/category', '', ''),
 (0, 1, 'route=product/product', '', ''),
