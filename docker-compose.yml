@@ -1,0 +1,31 @@
+version: '2'
+
+services:
+  opencart-app:
+    image: webdevops/php-nginx:7.2
+    container_name: opencart-app
+    working_dir: /var/www/app
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+    - .:/var/www/app
+    links:
+      - opencart-mysql
+    environment:
+    - WEB_DOCUMENT_ROOT="/var/www/app"
+    - APPLICATION_PATH=/var/www/app
+
+  opencart-mysql:
+    container_name: opencart-mysql
+    image: mysql:5.7
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=opencart
+      - MYSQL_DATABASE=opencart
+      - MYSQL_USER=opencart
+      - MYSQL_PASSWORD=opencart
+    volumes:
+      - ./mysql:/var/lib/mysql
