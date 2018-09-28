@@ -13,7 +13,7 @@ services:
     links:
       - opencart-mysql
     environment:
-    - WEB_DOCUMENT_ROOT="/var/www/app"
+    - WEB_DOCUMENT_ROOT=/var/www/app
     - APPLICATION_PATH=/var/www/app
 
   opencart-mysql:

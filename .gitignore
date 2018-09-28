@@ -1,1 +1,5 @@
 /.idea/
+/mysql/
+/system/storage/session/*
+/system/storage/cache/*
+/system/storage/logs/*

@@ -92,8 +92,10 @@ class ControllerCliInstall extends Controller {
 		// Options
 		$option = array(
 			'db_driver'   => 'mysqli',
-			'db_hostname' => 'localhost',
+			'db_hostname' => 'opencart-mysql',
 			'db_database' => 'opencart',
+            'db_username' => 'opencart',
+            'db_password' => 'opencart',
 			'db_prefix'   => 'oc_',
 			'db_port'     => '3306',
 			'username'    => 'admin'
